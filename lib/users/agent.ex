@@ -16,6 +16,10 @@ defmodule Exlivery.Users.Agent do
   end
 
   defp get_user(state, cpf) do
+    case Map.get(state, cpf) do
+      nil -> {:error, "User not found."}
+      user -> {:ok, user}
+    end
   end
 
   defp update_state(state, %User{cpf: cpf} = user) do
