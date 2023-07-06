@@ -5,7 +5,7 @@ defmodule Exlivery.Factory do
 
   def user_factory do
     %User{
-      address: "Rua das raparigas",
+      address: "Rua das lindas",
       name: "Mateus",
       email: "mateus@bananas.com",
       cpf: "123456789",
@@ -25,7 +25,7 @@ defmodule Exlivery.Factory do
   def order_factory do
     %Order{
       user_cpf: "123456789",
-      delivery_address: "Rua das raparigas",
+      delivery_address: "Rua das lindas",
       items: [
         build(:item),
         build(:item,

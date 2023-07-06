@@ -34,7 +34,7 @@ defmodule Exlivery.Users.AgentTest do
       expected_response =
         {:ok,
          %User{
-           address: "Rua das raparigas",
+           address: "Rua das lindas",
            name: "Mateus",
            email: "mateus@bananas.com",
            cpf: "123456789",
